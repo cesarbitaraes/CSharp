@@ -1,0 +1,5 @@
+Comandos EF:
+
+dotnet ef migrations add InitialCreation -> Criar migrações
+dotnet ef database update -> Atualizar o banco de dados
+dotnet ef migrations remove -> Remover a última migração
