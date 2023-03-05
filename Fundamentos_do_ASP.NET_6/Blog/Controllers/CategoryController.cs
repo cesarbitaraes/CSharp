@@ -2,6 +2,7 @@
 using Blog.Extensions;
 using Blog.Models;
 using Blog.ViewModels;
+using Blog.ViewModels.Categories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -21,7 +22,7 @@ public class CategoryController : ControllerBase
         }
         catch
         {
-            return StatusCode(500, new ResultViewModel<List<Category>>("05X04 - Falha interna no servidor."));
+            return StatusCode(500, new ResultViewModel<List<Category>>("Falha interna no servidor."));
         }
     }
     
