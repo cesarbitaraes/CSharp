@@ -8,10 +8,15 @@ namespace Blog.Controllers;
 public class HomeController : ControllerBase
 {
     [HttpGet("")]
-    [ApiKey]
-    public IActionResult Get()
+    //[ApiKey]
+    public IActionResult Get(
+        [FromServices] IConfiguration configuration)
     {
-        return Ok();
+        var env = configuration.GetValue<string>("Env");
+        return Ok(new
+        {
+            Environment = env
+        });
     }
     
 }
