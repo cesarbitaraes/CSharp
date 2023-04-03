@@ -1,4 +1,6 @@
-﻿namespace Balta.ContentContext;
+﻿using Balta.NotificationContext;
+
+namespace Balta.ContentContext;
 
 public class Article : Content
 {
