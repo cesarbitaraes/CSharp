@@ -3,3 +3,7 @@ Comandos EF:
 dotnet ef migrations add InitialCreation -> Criar migrações
 dotnet ef database update -> Atualizar o banco de dados
 dotnet ef migrations remove -> Remover a última migração
+
+Links:
+
+https://learn.microsoft.com/pt-br/ef/core/managing-schemas/migrations/managing?tabs=dotnet-core-cli
